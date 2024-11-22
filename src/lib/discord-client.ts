@@ -17,7 +17,7 @@ export class DiscordClient {
     userId: string
   ): Promise<RESTPostAPICurrentUserCreateDMChannelResult> {
     return this.rest.post(Routes.userChannels(), {
-      body: { receipient_id: userId },
+      body: { recipient_id: userId },
     }) as Promise<RESTPostAPICurrentUserCreateDMChannelResult>
   }
 

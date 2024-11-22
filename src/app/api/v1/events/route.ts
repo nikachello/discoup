@@ -189,7 +189,7 @@ export const POST = async (req: NextRequest) => {
     }
 
     return NextResponse.json(
-      { message: "Internal server error" },
+      { message: "Internal server errors" },
       { status: 500 }
     )
   }
